@@ -14,15 +14,15 @@ def search(data=df):
         
     decide_search = input("Seacrh by PART or DESCRIPTION?\nEnter 'P' or 'D'\n>>>").upper()
         
-    #asked the user which type of search they want to perform    
+#asked the user which type of search they want to perform    
        
     if decide_search == 'P':
         
             
             type_part = input('Enter a part number: ') 
             print("Type 'E' to exit")
-   #part numbers often contain a str + int        
-   #therefore, interger only part numbers had to be identified to avoid Error        
+#part numbers often contain a str + int        
+#therefore, interger only part numbers had to be identified to avoid Error        
             
             if type_part.isdigit():
                 
@@ -40,7 +40,7 @@ def search(data=df):
                 user_data not in df['Item']
                 print('Part number not in database')
                 
-   #search via description based on keywords        
+#search via description based on keywords        
        
     if decide_search == 'D':
             
